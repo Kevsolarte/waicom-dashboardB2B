@@ -1,5 +1,3 @@
-// src/mocks/auth/users.mock.ts
-
 import type { User } from "../../types/user";
 
 export const MOCK_USERS: Array<User & { password: string }> = [
