@@ -33,5 +33,4 @@ Dashboard B2B desarrollado como prueba técnica para Waicom.ai, incluyendo siste
 ### Pasos para ejecutar
 1. **Clonar el repositorio**
 git clone [https://github.com/Kevsolarte/waicom-dashboardB2B.git]
-cd walcom-dashboardb2b
 tambien puedes verlo directamente en 
