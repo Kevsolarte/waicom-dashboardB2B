@@ -1,4 +1,3 @@
-// src/pages/dashboard/components/SalesCharts.tsx
 import { useState } from "react";
 import type { SalesByDay, SalesByChannel, SalesByPayment, OrdersByStatus, } from "../../../types/dashboard";
 import { ResponsiveContainer, LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, BarChart, Bar, } from "recharts";
