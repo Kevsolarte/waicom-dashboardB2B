@@ -1,9 +1,9 @@
 # Dashboard B2B - Waicom.ai
 
-## 📋 Descripción
+## Descripción
 Dashboard B2B desarrollado como prueba técnica para Waicom.ai, incluyendo sistema de autenticación, visualización de datos y gestión de perfil de usuario.
 
-## 🚀 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 - **React 18** - Biblioteca principal de UI
 - **TypeScript** - Tipado estático para mayor robustez
 - **Vite** - Tooling de desarrollo rápido
@@ -26,11 +26,18 @@ Dashboard B2B desarrollado como prueba técnica para Waicom.ai, incluyendo siste
 - **ESLint** - Linting del código
 - **Mock Data** - Datos de prueba para desarrollo
 
-## 🛠️ Instalación y Ejecución
+## Instalación y Ejecución
 - Node.js 16+ 
 - npm o yarn
 
 ### Pasos para ejecutar
 1. **Clonar el repositorio**
 git clone [https://github.com/Kevsolarte/waicom-dashboardB2B.git]
-tambien puedes verlo directamente en 
+tambien puedes verlo directamente en https://waicom-dashboard-b2-b.vercel.app/
+y para iniciar sesion y ver los datos usa estos 3 usuarios
+email: admin@waicom.ai
+password: password123
+email: carlos@demo.com
+password: carlos123
+email: maria@demo.com
+password: maria123
