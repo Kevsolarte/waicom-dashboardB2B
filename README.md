@@ -35,9 +35,9 @@ Dashboard B2B desarrollado como prueba técnica para Waicom.ai, incluyendo siste
 git clone [https://github.com/Kevsolarte/waicom-dashboardB2B.git]
 tambien puedes verlo directamente en https://waicom-dashboard-b2-b.vercel.app/
 y para iniciar sesion y ver los datos usa estos 3 usuarios
-email: admin@waicom.ai
-password: password123
-email: carlos@demo.com
-password: carlos123
-email: maria@demo.com
-password: maria123
+correo: admin@waicom.ai
+contraseña: password123
+correo: carlos@demo.com
+contraseña: carlos123
+correo: maria@demo.com
+contraseña: maria123
