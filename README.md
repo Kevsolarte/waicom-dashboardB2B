@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+# Dashboard B2B - Waicom.ai
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Descripción
+Dashboard B2B desarrollado como prueba técnica para Waicom.ai, incluyendo sistema de autenticación, visualización de datos y gestión de perfil de usuario.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core Technologies
+- **React 18** - Biblioteca principal de UI
+- **TypeScript** - Tipado estático para mayor robustez
+- **Vite** - Tooling de desarrollo rápido
 
-## React Compiler
+### Estado y Gestión de Datos
+- **React Context API** - Gestión del estado de autenticación
+- **Custom Hooks** - Lógica reutilizable (useAuth)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### UI y Estilos
+- **Tailwind CSS** - Framework de utilidades CSS
+- **Material-UI** - Componentes de UI (opcional, si lo usaste)
+- **Chart.js / Recharts** - Librería de gráficas (especifica cuál usaste)
 
-## Expanding the ESLint configuration
+### Routing y Validación
+- **React Router DOM** - Navegación entre páginas
+- **React Hook Form** - Manejo de formularios (si lo usaste)
+- **Zod** - Validación de esquemas (basado en loginSchema.ts)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Desarrollo
+- **ESLint** - Linting del código
+- **Mock Data** - Datos de prueba para desarrollo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Instalación y Ejecución
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerrequisitos
+- Node.js 16+ 
+- npm o yarn
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Pasos para ejecutar
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clonar el repositorio**
+git clone [https://github.com/Kevsolarte/waicom-dashboardB2B.git]
+cd walcom-dashboardb2b
+tambien puedes verlo directamente en 

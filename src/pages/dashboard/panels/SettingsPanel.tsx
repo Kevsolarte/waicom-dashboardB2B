@@ -1,22 +1,31 @@
 import { useForm } from "react-hook-form";
 import { useAuth } from "../../../hooks/useAuth";
 
+// Define el tipo para los datos del formulario
+interface ProfileFormData {
+  name: string;
+  avatarUrl: string;
+}
+
 export const SettingsPanel = () => {
   const { currentUser, updateProfile } = useAuth();
 
-  const { register, handleSubmit } = useForm({
+  const { register, handleSubmit } = useForm<ProfileFormData>({
     defaultValues: {
       name: currentUser?.name || "",
       avatarUrl: currentUser?.avatarUrl || "",
     }
   });
 
-  const onSubmit = (data: any) => {
-    updateProfile({
-      name: data.name,
-      avatarUrl: data.avatarUrl,
-      role: currentUser!.role 
-    });
+  // Usa el tipo definido
+  const onSubmit = (data: ProfileFormData) => {
+    if (currentUser) {
+      updateProfile({
+        name: data.name,
+        avatarUrl: data.avatarUrl,
+        role: currentUser.role 
+      });
+    }
   };
 
   return (

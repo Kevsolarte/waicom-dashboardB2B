@@ -182,7 +182,7 @@ export const DashboardPage = () => {
 
           {activeSection === "settings" && (
             <div className="w-full max-w-xl">
-              <SettingsPanel user={currentUser} />
+              <SettingsPanel  />
             </div>
           )}
         </main>
